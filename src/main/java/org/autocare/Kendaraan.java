@@ -1,7 +1,6 @@
 package org.autocare;
 
 public class Kendaraan {
-    // Encapsulation
     private String platNomor;
     private String merk;
     private String pemilik;
@@ -12,7 +11,6 @@ public class Kendaraan {
         this.pemilik = pemilik;
     }
 
-    // Getter dan Setter
     public String getPlatNomor() { return platNomor; }
     public void setPlatNomor(String platNomor) { this.platNomor = platNomor; }
 
@@ -22,7 +20,7 @@ public class Kendaraan {
     public String getPemilik() { return pemilik; }
     public void setPemilik(String pemilik) { this.pemilik = pemilik; }
 
-    public void tampilkanInfo() {
-        System.out.println("Pemilik: " + pemilik + " | Plat: " + platNomor + " | Merk: " + merk);
+    public String getInfo() {
+        return "Pemilik: " + pemilik + " | Plat: " + platNomor + " | Merk: " + merk;
     }
 }

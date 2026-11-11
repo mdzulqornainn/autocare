@@ -13,9 +13,7 @@ public class Mobil extends Kendaraan {
     public void setJumlahPintu(int jumlahPintu) { this.jumlahPintu = jumlahPintu; }
 
     @Override
-    public void tampilkanInfo() {
-        System.out.print("[MOBIL] ");
-        super.tampilkanInfo();
-        System.out.println("        Jumlah Pintu: " + jumlahPintu);
+    public String getInfo() {
+        return "[MOBIL] " + super.getInfo() + " | Jumlah Pintu: " + jumlahPintu;
     }
 }

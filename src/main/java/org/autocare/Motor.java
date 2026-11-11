@@ -12,9 +12,7 @@ public class Motor extends Kendaraan {
     public void setJenisTransmisi(String jenisTransmisi) { this.jenisTransmisi = jenisTransmisi; }
 
     @Override
-    public void tampilkanInfo() {
-        System.out.print("[MOTOR] ");
-        super.tampilkanInfo();
-        System.out.println("        Transmisi: " + jenisTransmisi);
+    public String getInfo() {
+        return "[MOTOR] " + super.getInfo() + " | Transmisi: " + jenisTransmisi;
     }
 }
