@@ -1,7 +1,7 @@
 package org.autocare;
 
 public class Kendaraan {
-    // Encapsulation: atribut menggunakan private
+    // Encapsulation
     private String platNomor;
     private String merk;
     private String pemilik;
@@ -22,7 +22,6 @@ public class Kendaraan {
     public String getPemilik() { return pemilik; }
     public void setPemilik(String pemilik) { this.pemilik = pemilik; }
 
-    // Method untuk dioverride oleh Subclass
     public void tampilkanInfo() {
         System.out.println("Pemilik: " + pemilik + " | Plat: " + platNomor + " | Merk: " + merk);
     }
